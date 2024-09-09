@@ -1,0 +1,26 @@
+[project]
+name = "pycones-discord-bot"
+version = "0.1.0"
+description = "Handles atendees based on their ticket bought on Pretix!"
+authors = [
+    { name = "Javier Alonso (Javinator9889)", email = "javinator9889@es.python.org" }
+]
+dependencies = [
+    "discord-py>=2.4.0",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pycones_discord_bot"]
